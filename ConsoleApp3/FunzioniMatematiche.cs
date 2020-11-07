@@ -50,38 +50,7 @@ public class matematica
         }
         return f;
     }
-    public static int MinoreTra(int a, int b, int c)
-    {
-        int min;
-        if (a < b && a < c)
-        {
-            min = a;
-        }
-        else if (b < a && b < c)
-        {
-            min = b;
-        }
-        else
-        {
-            min = c;
-        }
-    }
-    public static int MaggioreTra(int a, int b, int c)
-    {
-        int max;
-        if (a > b && a > c)
-        {
-            max = a;
-        }
-        else if (b > a && b > c)
-        {
-            max = b;
-        }
-        else
-        {
-            max = c;
-        }
-    }
+   
     public static double inverso(int a)
     {
         return a = a * -1;
@@ -91,11 +60,11 @@ public class matematica
         bool IsPari;
         if(a%2==0)
         {
-            IsPari = true;
+            IsPari = vero;
         }
         else
         {
-            IsPari = false;
+            IsPari = falso;
         }
         return IsPari;
     }
@@ -105,11 +74,11 @@ public class matematica
         bool IsDispari;
         if (a % 2 == 0)
         {
-            IsDispari = false;
+            IsDispari = falso;
         }
         else
         {
-            IsDispari = true;
+            IsDispari = vero;
         }
         return IsDispari;
     }
@@ -118,11 +87,11 @@ public class matematica
         bool IsPositivo;
         if (a >0  )
         {
-            IsPositivo =true;
+            IsPositivo =vero;
         }
         else
         {
-            IsPositivo = false;
+            IsPositivo = falso;
         }
         return IsPositivo;
     }
@@ -131,25 +100,12 @@ public class matematica
         bool IsNegativo;
         if (a < 0)
         {
-            IsNegativo = true;
+            IsNegativo = vero;
         }
         else
         {
-            IsNegativo = false;
+            IsNegativo = falso;
         }
         return IsNegativo;
-    }
-    public static bool IsIntero(double a)
-    {
-        bool IsIntero;
-        if (a =)
-        {
-            IsIntero = true;
-        }
-        else
-        {
-            IsIntero = false;
-        }
-        return IsIntero;
     }
 }
